@@ -15,9 +15,9 @@ const VisionMissionSection = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-                    className="flex-1 p-10 md:p-20 lg:p-24 flex flex-col justify-center bg-white relative group border-b lg:border-b-0 lg:border-r border-slate-100 self-stretch overflow-hidden"
+                    className="flex-1 p-10 md:p-20 lg:p-24 flex flex-col justify-center bg-white relative group border-b lg:border-b-0 lg:border-r border-slate-100 self-stretch overflow-hidden z-20"
                 >
-                    <div className="max-w-lg relative z-10 mx-auto lg:mx-0">
+                    <div className="max-w-lg relative z-10 mx-auto">
                         <motion.div
                             initial={{ opacity: 0, y: 15 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -49,9 +49,9 @@ const VisionMissionSection = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-                    className="flex-1 p-10 md:p-20 lg:p-24 flex flex-col justify-center bg-slate-950 text-white relative overflow-hidden self-stretch"
+                    className="flex-1 p-10 md:p-20 lg:p-24 flex flex-col justify-center bg-slate-950 text-white relative overflow-hidden self-stretch z-20"
                 >
-                    <div className="max-w-lg relative z-10 mx-auto lg:mx-0">
+                    <div className="max-w-lg relative z-10 mx-auto">
                         <motion.div
                             initial={{ opacity: 0, y: 15 }}
                             whileInView={{ opacity: 1, y: 0 }}

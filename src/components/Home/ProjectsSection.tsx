@@ -56,7 +56,7 @@ const ProjectsSection = () => {
 
                 {/* Projects Grid */}
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
-                    {projects.featuredProjects.map((project, index) => (
+                    {projects?.featuredProjects.map((project, index) => (
                         <motion.div
                             key={index}
                             style={{ y: index === 1 ? yParallax : 0 }}
@@ -64,7 +64,7 @@ const ProjectsSection = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, margin: "-100px" }}
                             transition={{ duration: 0.8, delay: index * 0.1 }}
-                            className={`lg:col-span-${index === 2 ? '12' : index === 0 ? '7' : '5'} flex flex-col`}
+                            className={`${index === 2 ? 'lg:col-span-12' : index === 0 ? 'lg:col-span-7' : 'lg:col-span-5'} flex flex-col`}
                         >
                             <div className="group relative w-full h-full rounded-[2.5rem] overflow-hidden bg-white shadow-[0_20px_50px_rgba(0,0,0,0.04)] hover:shadow-[0_45px_90px_rgba(0,0,0,0.12)] transition-all duration-700 border border-slate-100 flex flex-col">
                                 {/* Image Container */}

@@ -80,7 +80,7 @@ const ProcessSection = () => {
                 </div>
 
                 {/* Final Bonding Segment */}
-                <motion.div
+                {/* <motion.div
                     initial={{ opacity: 0, scale: 0.95 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
@@ -95,7 +95,7 @@ const ProcessSection = () => {
                     <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-white shadow-[0_0_30px_rgba(59,130,246,0.5)]">
                         <div className="w-6 h-6 border-2 border-white border-t-transparent rounded-full animate-spin" />
                     </div>
-                </motion.div>
+                </motion.div> */}
             </div>
         </section>
     );
