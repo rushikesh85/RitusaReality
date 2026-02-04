@@ -15,7 +15,7 @@ const ProjectsSection = () => {
     const yParallax = useTransform(scrollYProgress, [0, 1], [0, -100]);
 
     return (
-        <section ref={sectionRef} className="py-32 lg:py-52 bg-white relative overflow-hidden" id="projects">
+        <section ref={sectionRef} className=" bg-white relative overflow-hidden" id="projects">
 
             {/* Bonding Element: Floating Blur */}
             <div className="absolute top-1/4 left-0 w-96 h-96 bg-primary/5 rounded-full blur-[120px] -translate-x-1/2 pointer-events-none" />

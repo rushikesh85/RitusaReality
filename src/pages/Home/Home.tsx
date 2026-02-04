@@ -5,7 +5,6 @@ import AboutSection from '../../components/Home/AboutSection';
 import VisionMissionSection from '../../components/Home/VisionMissionSection';
 import ServicesSection from '../../components/Home/ServicesSection';
 import ProcessSection from '../../components/Home/ProcessSection';
-import ProjectsSection from '../../components/Home/ProjectsSection';
 import ValuesSection from '../../components/Home/ValuesSection';
 
 const Home = () => {
@@ -23,7 +22,6 @@ const Home = () => {
             <AboutSection />
             <VisionMissionSection />
             <ServicesSection />
-            <ProjectsSection />
             <ProcessSection />
             <ValuesSection />
 

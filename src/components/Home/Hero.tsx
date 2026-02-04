@@ -88,7 +88,7 @@ const Hero = () => {
                         variants={itemVariants}
                         className="text-lg md:text-xl text-white/70 mb-14 max-w-2xl mx-auto leading-relaxed font-light tracking-wide"
                     >
-                        {content.subheadline}
+                        {content.description}
                     </motion.p>
 
                     <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-6 justify-center items-center">

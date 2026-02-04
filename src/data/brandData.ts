@@ -1,19 +1,14 @@
 export const brandData = {
-    name: "Ritusa Realty LLP",
-    industry: "Real Estate Advisory & Property Solutions",
+    name: "Sachin Bhosale Group",
+    industry: "Real Estate Development & Social Transformation",
     legalStructure: "Limited Liability Partnership (LLP)",
     founder: {
-        name: "Ratnawali Ingale",
-        designation: "Founder",
-        philosophy: "Trust is the most valuable asset in real estate. Every decision must protect the customer’s interest first—profit follows credibility."
+        name: "Sachin Raghunath Bhosale",
+        designation: "Founder, Shivjal Group | Visionary Social Reformer",
+        philosophy: "True progress is measured by the lives we uplift.",
+        shortBio: "Sachin Raghunath Bhosale is a renowned entrepreneur and social reformer dedicated to transforming rural and semi-urban Maharashtra through affordable housing, employment generation, education, and sustainable development.",
+        fullBio: "Sachin Raghunath Bhosale is an Indian entrepreneur, real estate developer, and social reformer. Born in Inglewadi village, Phaltan (Satara District), he grew up witnessing the challenges of rural poverty, limited infrastructure, and scarce employment. From working as a vegetable vendor to founding Shivjal Group, Sachin’s journey embodies perseverance, empathy, and a vision for inclusive rural development."
     },
-    tone: ["professional", "trust-driven", "ethical", "premium"],
-    targetAudience: [
-        "First-time home buyers",
-        "Families seeking residential upgrades",
-        "Long-term real estate investors",
-        "Customers who value transparency and legal clarity"
-    ],
     heroSection: {
         type: "parallax-video-hero",
         backgroundVideo: {
@@ -23,7 +18,7 @@ export const brandData = {
             autoplay: true,
             overlay: {
                 color: "#000000",
-                opacity: 0.45
+                opacity: 0.55
             }
         },
         parallax: {
@@ -34,31 +29,40 @@ export const brandData = {
         content: {
             headline: "Trust-Led Real Estate Advisory",
             subheadline: "Transparent. Ethical. Professionally Governed Property Solutions.",
+            description: "Empowering Rural Maharashtra Through Affordable Housing, Sustainable Development, and Inclusive Growth",
             ctaPrimary: {
-                label: "Explore Projects",
-                action: "/projects"
+                label: "Explore Vision",
+                action: "/about"
             },
             ctaSecondary: {
-                label: "Talk to an Advisor",
-                action: "/contact"
+                label: "View Projects",
+                action: "/projects"
             }
         }
     },
+    statistics: [
+        { label: "Homes Delivered", value: "2,000+", icon: "Home", color: "text-blue-500" },
+        { label: "Trees Planted", value: "30L+", icon: "TreeDeciduous", color: "text-green-500" },
+        { label: "Youth Empowered", value: "5,000+", icon: "Users", color: "text-orange-500" },
+        { label: "Entrepreneurs Trained", value: "700+", icon: "Briefcase", color: "text-purple-500" }
+    ],
     aboutSection: {
         title: "Who We Are",
-        description: "Ritusa Realty LLP is a professionally structured and ethically driven real estate advisory and development firm. We focus on curated residential and countryside investment opportunities that align with lifestyle aspirations, long-term value, and regulatory clarity.",
+        description: "Ritusa Realty LLP is associated with Shivjal Group, a vision driven by inclusive growth, social responsibility, and rural transformation. Development goes beyond construction; it is about creating dignity, opportunity, and sustainable communities across Maharashtra.",
         highlights: [
-            "Trust-based real estate consulting",
-            "Residential and farmland investments",
-            "Documented and process-driven advisory"
+            "Affordable rural housing & infrastructure",
+            "Employment & entrepreneurship generation",
+            "Education & environmental stewardship"
         ]
     },
     visionMission: {
-        vision: "To become a trusted and respected real estate brand known for integrity, professionalism, and customer satisfaction.",
+        vision: "Transforming Rural Areas into Urban-Standard Living Environments. Sachin Bhosale envisions villages equipped with modern housing, infrastructure, and opportunities—while preserving cultural identity.",
         mission: [
-            "Guide customers with honest and well-researched property advice",
-            "Build long-term relationships beyond transactions",
-            "Maintain transparency at every stage of the buying journey"
+            "Deliver affordable housing and dignified living",
+            "Enable local employment and entrepreneurship",
+            "Empower youth through education and skill training",
+            "Promote environmental sustainability and green initiatives",
+            "Build self-reliant, progressive rural communities"
         ]
     },
     services: {
@@ -82,29 +86,6 @@ export const brandData = {
             "Coordinate booking and documentation"
         ]
     },
-    projects: {
-        developerTieUp: "Shivjal Group",
-        featuredProjects: [
-            {
-                name: "Eight Mountain City",
-                location: "Panchgani",
-                type: "Plotted Development",
-                description: "A nature-centric plotting project designed for long-term land investment and lifestyle ownership."
-            },
-            {
-                name: "Jaguar Mega City",
-                location: "Katphal – Baramati",
-                type: "Row Houses & Residential Plots",
-                description: "A mixed residential development for end-users and investors seeking affordable, planned living."
-            },
-            {
-                name: "Infinity Mall",
-                location: "Chakan",
-                type: "Commercial Shops",
-                description: "A retail commercial development located in a fast-growing industrial corridor."
-            }
-        ]
-    },
     coreValues: [
         "Transparency and legal compliance",
         "Integrity-driven decision making",
@@ -119,11 +100,52 @@ export const brandData = {
         "Strong post-sales relationship management",
         "Long-term trust over short-term transactions"
     ],
+    projects: {
+        developerTieUp: "Shivjal Group",
+        featuredProjects: [
+            {
+                name: "Shivjal City",
+                location: "Phaltan",
+                type: "Modern Township",
+                description: "Modern township providing affordable RCC homes, designed for community living with urban amenities in a rural setting.",
+                image: "https://images.unsplash.com/photo-1592595896551-12b371d546d5?q=80&w=2070&auto=format&fit=crop"
+            },
+            {
+                name: "Jagwar Mega City",
+                location: "Katphal, Baramati",
+                type: "Residential Development",
+                description: "Large-scale planned residential development offering a blend of modern infrastructure and sustainable living.",
+                image: "https://images.unsplash.com/photo-1591474200742-8e512e6f98f8?q=80&w=1974&auto=format&fit=crop"
+            },
+            {
+                name: "Jagwar City",
+                location: "Atpadi",
+                type: "Plots & Bungalows",
+                description: "Premium residential plots and bungalow development tailored for those seeking peace and investment value.",
+                image: "https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?q=80&w=2070&auto=format&fit=crop"
+            }
+        ]
+    },
+    awards: [
+        "Maharashtra Gaurav Award – Government of Maharashtra",
+        "Doctor of Literature (D.Litt.) – Nelson Mandela University, London",
+        "Best Achievement in Real Estate – Affordable Housing Innovation",
+        "Honored by Shri Nitin Gadkari, Union Minister"
+    ],
     contact: {
-        contactPerson: "Mrs. Ratnawali Ingale",
-        designation: "Founder",
-        phone: "9071279712",
-        email: "info@ritusarealtyllp.com"
+        phone: "96576 11112",
+        website: "sachinbhosalegroup.com",
+        email: "info@ritusarealtyllp.com",
+        offices: [
+            {
+                city: "Pune",
+                address: "Opp. Modern High School, Revenue Colony, Dr. Kinkar Chowk, Shivajinagar, Pune – 411005"
+            },
+            {
+                city: "Phaltan",
+                address: "Shree Sai Plaza, Near Anant Mangal Karyalay, Narsobanagar, Kolki, Tal. Phaltan, Dist. Satara – 415523"
+            }
+        ]
     },
     footerNote: "Ritusa Realty LLP stands for professionalism, transparency, and ethical leadership—committed to earning trust today and sustaining it for the future."
 };
