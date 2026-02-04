@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import Hero from '../../components/Home/Hero';
 import AboutSection from '../../components/Home/AboutSection';
 import VisionMissionSection from '../../components/Home/VisionMissionSection';
@@ -59,12 +60,12 @@ const Home = () => {
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
-                                <a href="/contact" className="group/btn relative px-12 py-6 bg-primary text-white rounded-full font-bold text-lg overflow-hidden transition-all hover:pr-16 active:scale-95 shadow-[0_20px_40px_rgba(59,130,246,0.3)]">
+                                <Link to="/contact" className="group/btn relative px-12 py-6 bg-primary text-white rounded-full font-bold text-lg overflow-hidden transition-all hover:pr-16 active:scale-95 shadow-[0_20px_40px_rgba(59,130,246,0.3)]">
                                     <span className="relative z-10 uppercase tracking-widest text-sm">Talk to an Advisor</span>
                                     <div className="absolute right-6 top-1/2 -translate-y-1/2 opacity-0 group-hover/btn:opacity-100 transition-all">
                                         →
                                     </div>
-                                </a>
+                                </Link>
                                 <a href="/projects" className="px-12 py-6 text-white/60 hover:text-white font-bold text-sm uppercase tracking-widest border border-white/10 rounded-full transition-all hover:bg-white/5">
                                     Browse Portfolio
                                 </a>
