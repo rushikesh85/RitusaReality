@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import { brandData } from '../../data/brandData';
-import modernArchImage from '/home/rushikesh/.gemini/antigravity/brain/bb9335dc-0f45-456b-86cb-4a8e0c77fb5c/modern_real_estate_advisory_1769883433329.png';
+import modernArchImage from '../../assets/modern_real_estate_advisory_1769883433329.png';
 
 const AboutSection = () => {
     const { aboutSection, founder } = brandData;
