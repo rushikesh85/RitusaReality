@@ -1,4 +1,5 @@
 import { brandData } from '../../data/brandData';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -21,24 +22,24 @@ const Footer = () => {
                         <h4 className="text-xl font-semibold mb-4 text-white">Quick Links</h4>
                         <ul className="space-y-2">
                             <li>
-                                <a href="/" className="text-slate-300 hover:text-white transition-colors">
+                                <Link to="/" className="text-slate-300 hover:text-white transition-colors">
                                     Home
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="/projects" className="text-slate-300 hover:text-white transition-colors">
+                                <Link to="/projects" className="text-slate-300 hover:text-white transition-colors">
                                     Projects
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="/about" className="text-slate-300 hover:text-white transition-colors">
+                                <Link to="/about" className="text-slate-300 hover:text-white transition-colors">
                                     About
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="/contact" className="text-slate-300 hover:text-white transition-colors">
+                                <Link to="/contact" className="text-slate-300 hover:text-white transition-colors">
                                     Contact
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>

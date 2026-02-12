@@ -64,9 +64,9 @@ const Home = () => {
                                         →
                                     </div>
                                 </Link>
-                                <a href="/projects" className="px-12 py-6 text-white/60 hover:text-white font-bold text-sm uppercase tracking-widest border border-white/10 rounded-full transition-all hover:bg-white/5">
+                                <Link to="/projects" className="px-12 py-6 text-white/60 hover:text-white font-bold text-sm uppercase tracking-widest border border-white/10 rounded-full transition-all hover:bg-white/5">
                                     Browse Portfolio
-                                </a>
+                                </Link>
                             </div>
                         </div>
 

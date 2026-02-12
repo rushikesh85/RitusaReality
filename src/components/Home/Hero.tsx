@@ -1,4 +1,5 @@
 import { motion, useScroll, useTransform, type Variants } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { useRef } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { brandData } from '../../data/brandData';
@@ -92,21 +93,21 @@ const Hero = () => {
                     </motion.p>
 
                     <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                        <a
-                            href={content.ctaPrimary.action}
+                        <Link
+                            to={content.ctaPrimary.action}
                             className="group relative px-10 py-4 bg-white text-black rounded-full font-medium text-sm md:text-base transition-all hover:bg-white/90 active:scale-95"
                         >
                             <span className="flex items-center gap-2">
                                 {content.ctaPrimary.label} <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                             </span>
-                        </a>
+                        </Link>
 
-                        <a
-                            href={content.ctaSecondary.action}
+                        <Link
+                            to={content.ctaSecondary.action}
                             className="px-10 py-4 text-white font-medium text-sm md:text-base border border-white/20 rounded-full bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all active:scale-95"
                         >
                             {content.ctaSecondary.label}
-                        </a>
+                        </Link>
                     </motion.div>
                 </motion.div>
             </div>

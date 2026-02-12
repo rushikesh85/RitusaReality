@@ -1,4 +1,5 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { MapPin, ArrowUpRight } from 'lucide-react';
 import { useRef } from 'react';
 import { brandData } from '../../data/brandData';
@@ -45,12 +46,12 @@ const ProjectsSection = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, delay: 0.3 }}
                     >
-                        <a href="/projects" className="group p-8 bg-slate-900 rounded-[2rem] text-white flex items-center gap-6 hover:bg-primary transition-all duration-500 shadow-2xl">
+                        <Link to="/projects" className="group p-8 bg-slate-900 rounded-[2rem] text-white flex items-center gap-6 hover:bg-primary transition-all duration-500 shadow-2xl">
                             <span className="text-sm font-bold uppercase tracking-widest whitespace-nowrap">Explore All Projects</span>
                             <div className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-white group-hover:text-slate-900 transition-all">
                                 <ArrowUpRight size={20} />
                             </div>
-                        </a>
+                        </Link>
                     </motion.div>
                 </div>
 
