@@ -47,7 +47,7 @@ const Footer = () => {
                         <h4 className="text-xl font-semibold mb-4 text-white">Contact Info</h4>
                         <p className="text-slate-300 mb-2">Email: {brandData.contact.email}</p>
                         <p className="text-slate-300 mb-2">Phone: +91 {brandData.contact.phone}</p>
-                        <p className="text-slate-300">Founder: {brandData.contact.contactPerson}</p>
+                        <p className="text-slate-300">Founder: {brandData.founder.name}</p>
 
                         <div className="mt-6 flex gap-4">
                             <a href="#" className="text-slate-400 hover:text-white transition-colors">Instagram</a>

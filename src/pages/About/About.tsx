@@ -1,9 +1,9 @@
-import { motion } from 'framer-motion';
+
 import { Home, Users, TreeDeciduous, Award, Building2, Leaf, Briefcase, Heart } from 'lucide-react';
 import { brandData } from '../../data/brandData';
 
 const About = () => {
-    const { founder, statistics, awards, visionMission } = brandData;
+    const { founder, statistics, awards } = brandData;
 
     const statsIcons = {
         "Home": Home,
@@ -18,19 +18,14 @@ const About = () => {
             <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-slate-900 text-white">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-primary/20 via-slate-900 to-slate-900 z-0" />
                 <div className="container relative z-10 px-6">
-                    <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
-                        className="max-w-4xl"
-                    >
+                    <div className="max-w-4xl">
                         <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 leading-tight">
                             Building <span className="text-primary">Tomorrow’s India</span>, Today.
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-300 font-light leading-relaxed max-w-2xl">
                             A lifelong mission driven by inclusive growth, social responsibility, and rural transformation.
                         </p>
-                    </motion.div>
+                    </div>
                 </div>
             </section>
 
@@ -38,12 +33,7 @@ const About = () => {
             <section className="py-20 md:py-32 bg-white">
                 <div className="container px-6">
                     <div className="grid lg:grid-cols-2 gap-16 items-start">
-                        <motion.div
-                            initial={{ opacity: 0, x: -30 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.8 }}
-                        >
+                        <div>
                             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-8">
                                 Bridging the <span className="italic text-primary">Rural–Urban</span> Divide
                             </h2>
@@ -61,18 +51,14 @@ const About = () => {
                                     "{founder.philosophy}"
                                 </div>
                             </div>
-                        </motion.div>
+                        </div>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             {statistics.map((stat, index) => {
                                 const Icon = statsIcons[stat.icon as keyof typeof statsIcons] || Home;
                                 return (
-                                    <motion.div
+                                    <div
                                         key={index}
-                                        initial={{ opacity: 0, y: 20 }}
-                                        whileInView={{ opacity: 1, y: 0 }}
-                                        viewport={{ once: true }}
-                                        transition={{ delay: index * 0.1 }}
                                         className="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg transition-shadow duration-300 group"
                                     >
                                         <div className={`w-12 h-12 rounded-xl bg-white flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform ${stat.color}`}>
@@ -80,7 +66,7 @@ const About = () => {
                                         </div>
                                         <h3 className="text-4xl font-bold text-slate-900 mb-2">{stat.value}</h3>
                                         <p className="text-slate-500 font-medium">{stat.label}</p>
-                                    </motion.div>
+                                    </div>
                                 );
                             })}
                         </div>
@@ -94,16 +80,11 @@ const About = () => {
 
                 <div className="container relative z-10 px-6">
                     <div className="max-w-6xl mx-auto">
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            className="text-center mb-20"
-                        >
+                        <div className="text-center mb-20">
                             <span className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Visionary Leadership</span>
                             <h2 className="text-4xl md:text-5xl font-bold mb-6">{founder.name}</h2>
                             <p className="text-xl text-slate-400">{founder.designation}</p>
-                        </motion.div>
+                        </div>
 
                         <div className="grid md:grid-cols-12 gap-16 items-center">
                             {/* Profile Story */}
@@ -136,12 +117,7 @@ const About = () => {
 
                             {/* Abstract Image Placeholder */}
                             <div className="md:col-span-5 relative order-1 md:order-2">
-                                <motion.div
-                                    initial={{ opacity: 0, scale: 0.95 }}
-                                    whileInView={{ opacity: 1, scale: 1 }}
-                                    viewport={{ once: true }}
-                                    className="aspect-[4/5] rounded-2xl overflow-hidden bg-slate-800 relative group shadow-2xl skew-y-1"
-                                >
+                                <div className="aspect-[4/5] rounded-2xl overflow-hidden bg-slate-800 relative group shadow-2xl skew-y-1">
                                     <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-black flex items-center justify-center text-slate-700">
                                         <Users size={80} className="opacity-20" />
                                     </div>
@@ -149,7 +125,7 @@ const About = () => {
                                         <div className="text-primary font-bold text-lg mb-1">Shivjal Group</div>
                                         <div className="text-xs text-slate-500 uppercase tracking-widest">Founder & Chairman</div>
                                     </div>
-                                </motion.div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -176,12 +152,8 @@ const About = () => {
                             { title: "Healthcare", icon: Heart, desc: "Conducting health camps benefiting 25,000+ individuals." },
                             { title: "Culture", icon: Users, desc: "Preserving traditions through Annadan Seva and festivals." },
                         ].map((item, idx) => (
-                            <motion.div
+                            <div
                                 key={idx}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: idx * 0.1 }}
                                 className="p-8 bg-slate-50 rounded-2xl group hover:bg-white hover:shadow-xl transition-all duration-300 border border-slate-100"
                             >
                                 <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center text-primary mb-6 shadow-sm group-hover:scale-110 transition-transform">
@@ -189,7 +161,7 @@ const About = () => {
                                 </div>
                                 <h3 className="text-xl font-bold text-slate-900 mb-3">{item.title}</h3>
                                 <p className="text-slate-600 leading-relaxed text-sm">{item.desc}</p>
-                            </motion.div>
+                            </div>
                         ))}
                     </div>
                 </div>
