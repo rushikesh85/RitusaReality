@@ -1,6 +1,7 @@
 
 import { Home, Users, TreeDeciduous, Award, Building2, Leaf, Briefcase, Heart } from 'lucide-react';
 import { brandData } from '../../data/brandData';
+import ownerImg from "../../assets/images/Ratnawali.jpeg"
 
 const About = () => {
     const { founder, statistics, awards } = brandData;
@@ -118,9 +119,11 @@ const About = () => {
                             {/* Abstract Image Placeholder */}
                             <div className="md:col-span-5 relative order-1 md:order-2">
                                 <div className="aspect-[4/5] rounded-2xl overflow-hidden bg-slate-800 relative group shadow-2xl skew-y-1">
-                                    <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-black flex items-center justify-center text-slate-700">
-                                        <Users size={80} className="opacity-20" />
-                                    </div>
+                                    <img 
+                                        src={ownerImg} 
+                                        alt="Ratnawali Ingale" 
+                                        className="absolute inset-0 w-full h-full object-cover transition-all duration-500"
+                                    />
                                     <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black via-black/80 to-transparent">
                                         <div className="text-primary font-bold text-lg mb-1">Ritusa Realty</div>
                                         <div className="text-xs text-slate-500 uppercase tracking-widest">Co-Founder</div>
