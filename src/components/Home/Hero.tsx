@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useRef } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { brandData } from '../../data/brandData';
-import heroVideo from '../../assets/images/2476425_Tree_Green_Yard_1920x1080.mp4';
+import heroVideo from '../../assets/images/LandingPageVid.mp4';
 
 const Hero = () => {
     const containerRef = useRef<HTMLDivElement>(null);
