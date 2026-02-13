@@ -1,7 +1,7 @@
 
 import { Home, Users, TreeDeciduous, Award, Building2, Leaf, Briefcase, Heart } from 'lucide-react';
 import { brandData } from '../../data/brandData';
-import ownerImg from "../../assets/images/Ratnawali.jpeg"
+import ownerImg from "../../assets/images/Ratnawali.png"
 
 const About = () => {
     const { founder, statistics, awards } = brandData;
