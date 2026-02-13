@@ -20,7 +20,7 @@ const About = () => {
                 <div className="container relative z-10 px-6">
                     <div className="max-w-4xl">
                         <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 leading-tight">
-                            Building <span className="text-primary">Tomorrow’s India</span>, Today.
+                            Building <span className="text-primary">Sustainable Communities</span>, Today.
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-300 font-light leading-relaxed max-w-2xl">
                             A lifelong mission driven by inclusive growth, social responsibility, and rural transformation.
@@ -39,7 +39,7 @@ const About = () => {
                             </h2>
                             <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
                                 <p>
-                                    At Sachin Bhosale Group, development goes beyond construction; it is about creating dignity,
+                                    At Ritusa Realty, development goes beyond construction; it is about creating dignity,
                                     opportunity, and sustainable communities across Maharashtra.
                                 </p>
                                 <p>
@@ -90,14 +90,14 @@ const About = () => {
                             {/* Profile Story */}
                             <div className="md:col-span-7 space-y-8 text-slate-300 leading-relaxed text-lg order-2 md:order-1">
                                 <p>
-                                    {founder.fullBio.split('Working as a vegetable vendor')[0]}
+                                    {founder.fullBio.split('She founded Café U n Me in 2017')[0]}
                                 </p>
                                 <p className="p-6 bg-white/5 rounded-xl border-l-4 border-primary italic text-slate-200">
-                                    "From working as a vegetable vendor in his early years to founding Shivjal Group..."
+                                    "Creating opportunities for rural entrepreneurs and sustainable living environments..."
                                 </p>
                                 <p>
-                                    {founder.fullBio.split('vision for inclusive rural development.')[1] ||
-                                        "He developed the values of resilience, discipline, and empathy—principles that continue to guide his leadership. Driven by the belief that every individual deserves housing, livelihood, dignity, and opportunity, he founded Shivjal Group to bring urban-standard living environments to rural and semi-urban regions, while preserving cultural identity."}
+                                    {founder.fullBio.split('She founded Café U n Me in 2017')[1] ||
+                                        "Driven by a vision of women empowerment and rural self-reliance, she established Café U n Me and Ritusa Realty to bring economic independence and quality living to smaller towns and villages."}
                                 </p>
 
                                 <div className="pt-8">
@@ -122,8 +122,8 @@ const About = () => {
                                         <Users size={80} className="opacity-20" />
                                     </div>
                                     <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black via-black/80 to-transparent">
-                                        <div className="text-primary font-bold text-lg mb-1">Shivjal Group</div>
-                                        <div className="text-xs text-slate-500 uppercase tracking-widest">Founder & Chairman</div>
+                                        <div className="text-primary font-bold text-lg mb-1">Ritusa Realty</div>
+                                        <div className="text-xs text-slate-500 uppercase tracking-widest">Co-Founder</div>
                                     </div>
                                 </div>
                             </div>

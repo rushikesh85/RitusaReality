@@ -1,13 +1,13 @@
 export const brandData = {
-    name: "Sachin Bhosale Group",
-    industry: "Real Estate Development & Social Transformation",
+    name: "Ritusa Realty",
+    industry: "Real Estate Development & Hospitality",
     legalStructure: "Limited Liability Partnership (LLP)",
     founder: {
-        name: "Sachin Raghunath Bhosale",
-        designation: "Founder, Shivjal Group | Visionary Social Reformer",
-        philosophy: "True progress is measured by the lives we uplift.",
-        shortBio: "Sachin Raghunath Bhosale is a renowned entrepreneur and social reformer dedicated to transforming rural and semi-urban Maharashtra through affordable housing, employment generation, education, and sustainable development.",
-        fullBio: "Sachin Raghunath Bhosale is an Indian entrepreneur, real estate developer, and social reformer. Born in Inglewadi village, Phaltan (Satara District), he grew up witnessing the challenges of rural poverty, limited infrastructure, and scarce employment. From working as a vegetable vendor to founding Shivjal Group, Sachin’s journey embodies perseverance, empathy, and a vision for inclusive rural development."
+        name: "Ratnawali Ingale",
+        designation: "Founder, Café U n Me | Co-Founder, Ritusa Realty LLP",
+        philosophy: "Empowerment through entrepreneurship and sustainable living.",
+        shortBio: "Ratnawali Ingale is an Indian entrepreneur and real estate developer known for founding Café U n Me and co-founding Ritusa Realty LLP. Her work spans hospitality, real estate, and rural self-employment initiatives.",
+        fullBio: "Ratnawali Ingale is an Indian entrepreneur, real estate developer, and businesswoman. Holding a Bachelor of Engineering in Computer Science, she began her career in hospitality and expanded into franchising and real estate. She founded Café U n Me in 2017, a chai and coffee franchise empowering women entrepreneurs. As Co-Founder of Ritusa Realty LLP, she focuses on farmland development and scenic agricultural projects near Panchgani and Mahabaleshwar. She also serves as a Regional Coordinator for MCED, supporting rural startups and skill development."
     },
     heroSection: {
         type: "parallax-video-hero",
@@ -29,9 +29,9 @@ export const brandData = {
         content: {
             headline: "Trust-Led Real Estate Advisory",
             subheadline: "Transparent. Ethical. Professionally Governed Property Solutions.",
-            description: "Empowering Rural Maharashtra Through Affordable Housing, Sustainable Development, and Inclusive Growth",
+            description: "Ritusa Realty LLP offers premium agricultural plots and countryside living experiences, blending investment value with environmental harmony.",
             ctaPrimary: {
-                label: "Explore Vision",
+                label: "Our Vision",
                 action: "/about"
             },
             ctaSecondary: {
@@ -41,100 +41,100 @@ export const brandData = {
         }
     },
     statistics: [
-        { label: "Homes Delivered", value: "2,000+", icon: "Home", color: "text-blue-500" },
+        { label: "Happy Families", value: "2,000+", icon: "Home", color: "text-blue-500" },
         { label: "Trees Planted", value: "30L+", icon: "TreeDeciduous", color: "text-green-500" },
-        { label: "Youth Empowered", value: "5,000+", icon: "Users", color: "text-orange-500" },
+        { label: "Women Empowered", value: "500+", icon: "Users", color: "text-orange-500" },
         { label: "Entrepreneurs Trained", value: "700+", icon: "Briefcase", color: "text-purple-500" }
     ],
     aboutSection: {
         title: "Who We Are",
-        description: "Ritusa Realty LLP is associated with Shivjal Group, a vision driven by inclusive growth, social responsibility, and rural transformation. Development goes beyond construction; it is about creating dignity, opportunity, and sustainable communities across Maharashtra.",
+        description: "Ritusa Realty LLP is a vision driven by inclusive growth, social responsibility, and rural transformation. We focus on offering affordable agricultural plots and countryside living experiences, catering to investors, nature enthusiasts, and second-home buyers.",
         highlights: [
-            "Affordable rural housing & infrastructure",
-            "Employment & entrepreneurship generation",
-            "Education & environmental stewardship"
+            "Scenic farmland & farmhouse projects",
+            "Women empowerment & entrepreneurship",
+            "Sustainable community development"
         ]
     },
     visionMission: {
-        vision: "Transforming Rural Areas into Urban-Standard Living Environments. Sachin Bhosale envisions villages equipped with modern housing, infrastructure, and opportunities—while preserving cultural identity.",
+        vision: "To create sustainable, nature-integrated living environments while fostering rural entrepreneurship and self-reliance.",
         mission: [
-            "Deliver affordable housing and dignified living",
-            "Enable local employment and entrepreneurship",
-            "Empower youth through education and skill training",
-            "Promote environmental sustainability and green initiatives",
-            "Build self-reliant, progressive rural communities"
+            "Develop scenic agricultural and residential communities",
+            "Promote women empowerment through business opportunities",
+            "Support rural skill development and self-employment",
+            "Ensure transparency and legal compliance in real estate",
+            "Preserve environmental balance through green initiatives"
         ]
     },
     services: {
         title: "Our Services",
         list: [
-            "Residential Property Advisory",
-            "Site Visit Coordination & Project Walkthroughs",
-            "Customer Requirement Analysis",
-            "Builder & Project Consultation",
-            "End-to-End Buying Support"
+            "Farmland & Farmhouse Plot Development",
+            "Real Estate Investment Advisory",
+            "Franchise Development (Café U n Me)",
+            "Entrepreneurship Training & Mentoring",
+            "Project Planning & Marketing"
         ]
     },
     process: {
         title: "How We Work",
         steps: [
-            "Understand customer needs and budget",
-            "Shortlist suitable projects",
-            "Explain and compare projects in detail",
-            "Plan and execute site visits",
-            "Support negotiation and decision-making",
-            "Coordinate booking and documentation"
+            "Understand customer investment goals",
+            "Showcase scenic and collaborative projects",
+            "Facilitate transparent site visits",
+            "Assist with legal documentation",
+            "Support long-term asset management",
+            "Foster community engagement"
         ]
     },
     coreValues: [
-        "Transparency and legal compliance",
-        "Integrity-driven decision making",
-        "Customer protection over aggressive selling",
-        "Professional governance and accountability",
-        "Relationship-focused growth"
+        "Sustainability and nature integration",
+        "Women and youth empowerment",
+        "Transparency and ethical business",
+        "Community-centric growth",
+        "Innovation in rural enterprise"
     ],
     whyChooseUs: [
-        "Founder-led organization with ethical leadership",
-        "Process-driven real estate advisory",
-        "Clear explanation of legal and financial realities",
-        "Strong post-sales relationship management",
-        "Long-term trust over short-term transactions"
+        "Led by visionary entrepreneur Ratnawali Ingale",
+        "Focus on legal compliance and transparency",
+        "Blends real estate with social impact",
+        "Strong track record in hospitality and development",
+        "Commitment to sustainable living"
     ],
     projects: {
-        developerTieUp: "Shivjal Group",
+        developerTieUp: "Ritusa Realty LLP",
         featuredProjects: [
             {
-                name: "Shivjal City",
-                location: "Phaltan",
-                type: "Modern Township",
-                description: "Modern township providing affordable RCC homes, designed for community living with urban amenities in a rural setting.",
+                name: "Scenic Valley",
+                location: "Near Panchgani",
+                type: "Farmhouse Plots",
+                description: "Premium agricultural plots offering breathtaking valley views and serene countryside living.",
                 image: "https://images.unsplash.com/photo-1592595896551-12b371d546d5?q=80&w=2070&auto=format&fit=crop"
             },
             {
-                name: "Jagwar Mega City",
-                location: "Katphal, Baramati",
-                type: "Residential Development",
-                description: "Large-scale planned residential development offering a blend of modern infrastructure and sustainable living.",
+                name: "Green Meadows",
+                location: "Mahabaleshwar Region",
+                type: "Eco-Township",
+                description: "Sustainable eco-township designed for nature lovers, featuring organic farming zones.",
                 image: "https://images.unsplash.com/photo-1591474200742-8e512e6f98f8?q=80&w=1974&auto=format&fit=crop"
             },
             {
-                name: "Jagwar City",
-                location: "Atpadi",
-                type: "Plots & Bungalows",
-                description: "Premium residential plots and bungalow development tailored for those seeking peace and investment value.",
+                name: "Nagewadi Hills",
+                location: "Nagewadi",
+                type: "Investment Plots",
+                description: "Strategic investment plots in developing corridors, ideal for long-term appreciation.",
                 image: "https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?q=80&w=2070&auto=format&fit=crop"
             }
         ]
     },
     awards: [
-        "Maharashtra Gaurav Award – Government of Maharashtra",
-        "Doctor of Literature (D.Litt.) – Nelson Mandela University, London",
-        "Best Achievement in Real Estate – Affordable Housing Innovation",
-        "Honored by Shri Nitin Gadkari, Union Minister"
+        "Women Entrepreneur Achievement Award",
+        "Excellence in Rural Franchising",
+        "Best Social Impact Real Estate Firm",
+        "Recognized by Maharashtra Centre for Entrepreneurship Development"
     ],
     contact: {
         phone: "96576 11112",
-        website: "sachinbhosalegroup.com",
+        website: "ritusarealtyllp.com",
         email: "info@ritusarealtyllp.com",
         offices: [
             {
@@ -147,5 +147,5 @@ export const brandData = {
             }
         ]
     },
-    footerNote: "Ritusa Realty LLP stands for professionalism, transparency, and ethical leadership—committed to earning trust today and sustaining it for the future."
+    footerNote: "Ritusa Realty LLP – Empowering dreams through sustainable real estate and entrepreneurship."
 };

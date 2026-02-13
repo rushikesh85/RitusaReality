@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import { useRef } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { brandData } from '../../data/brandData';
-import heroVideo from '../../assets/images/LandingPageVid.mp4';
+// Professional Architectural Image from Unsplash
+const HERO_IMAGE = "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop";
 
 const Hero = () => {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -40,23 +41,17 @@ const Hero = () => {
 
     return (
         <section ref={containerRef} className="relative h-screen overflow-hidden flex items-center justify-center bg-black">
-            {/* Background Video with subtle parallax */}
+            {/* Parallax Background Image */}
             <motion.div
                 style={{ y, scale }}
                 className="absolute inset-0 z-0"
             >
-                <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="w-full h-full object-cover"
-                >
-                    <source src={heroVideo} type="video/mp4" />
-                </video>
-
-                {/* Minimal Overlay */}
-                <div className="absolute inset-0 bg-black/40" />
+                <div
+                    className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                    style={{ backgroundImage: `url(${HERO_IMAGE})` }}
+                />
+                {/* Overlay for text readability */}
+                <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
             </motion.div>
 
             {/* Content Area */}
@@ -68,9 +63,9 @@ const Hero = () => {
                     style={{ opacity }}
                     className="max-w-4xl mx-auto text-center"
                 >
-                    <motion.div variants={itemVariants} className="mb-8">
-                        <span className="text-[10px] md:text-xs font-semibold tracking-[0.3em] text-white/60 uppercase">
-                            Ritusa Realty LLP • Established Trust
+                    <motion.div variants={itemVariants} className="mb-8 inline-block">
+                        <span className="py-2 px-6 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 text-[10px] md:text-xs font-semibold tracking-[0.3em] text-slate-300 uppercase">
+                            Ritusa Realty • Established Trust
                         </span>
                     </motion.div>
 
@@ -80,24 +75,26 @@ const Hero = () => {
                     >
                         {content.headline.split(' ').map((word, i) => (
                             word.toLowerCase() === 'trust-led' ?
-                                <span key={i} className="font-semibold">{word} </span> :
-                                <span key={i} className="opacity-90">{word} </span>
+                                <span key={i} className="font-semibold text-white">{word} </span> :
+                                <span key={i} className="opacity-80 text-slate-200">{word} </span>
                         ))}
                     </motion.h1>
 
                     <motion.p
                         variants={itemVariants}
-                        className="text-lg md:text-xl text-white/70 mb-14 max-w-2xl mx-auto leading-relaxed font-light tracking-wide"
+                        className="text-lg md:text-xl text-slate-200 mb-14 max-w-2xl mx-auto leading-relaxed font-light tracking-wide text-shadow-sm"
                     >
                         {content.description}
                     </motion.p>
+
+                    {/* Glassmorphic Backdrop for better text contrast/readability if needed, though gradient overlay helps */}
 
                     <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                         <Link
                             to={content.ctaPrimary.action}
                             className="group relative px-10 py-4 bg-white text-black rounded-full font-medium text-sm md:text-base transition-all hover:bg-white/90 active:scale-95"
                         >
-                            <span className="flex items-center gap-2">
+                            <span className="flex items-center gap-2 text-slate-900">
                                 {content.ctaPrimary.label} <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                             </span>
                         </Link>
